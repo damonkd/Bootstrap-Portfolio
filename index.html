@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<title>Damon Daniels Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+   
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+   
+    <a href=" https://www.linkedin.com/in/damon-kendrick-daniels/" ><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Damon Daniels Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+     
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://reactlibrarytest.herokuapp.com/saved" ><img src="images/book1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a href>
+      <div class="w3-container w3-white">
+        <p><b>Google Books API</b></p>
+        <p>App allows user to search the google books API and then save that book to a MongoDB for later viewing. On load use the search button to find a book. Click the save button to save the book. Click on saved at the top to view saved books.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://jamesrader.github.io/group-2-project/index.html"> <img src="images/travel.png" alt="Norway" style="width:100%" class="w3-hover-opacity"></a href>
+      <div class="w3-container w3-white">
+        <p><b>Holiday Everyday</b></p>
+        <p>Project allows user to search for a holiday on any given day of the year. Once a date is selected the page returns a list of holidays on that day, what country they are in, the countries flag, a wikipedia link about the holiday, basic flight pricing, risk level of that country, and a link to purchase tickets to that countries capitol 3 days before the holiday from Skyscanner. Project uses API's from holiday everyday, wikipedia, and Travelpayouts.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+        <a href ="https://fdddgroup.herokuapp.com/"> <img src="images/budget.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a href>
+      <div class="w3-container w3-white">
+        <p><b>Budget Buddy</b></p>
+        <p>Web based budgeting app using mySQL, nodejs, and express that allows a user to create an account, add monthly income, and expenses. The user can then see a graphical breakdown of where their money is going.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://damonkd.github.io/TriviaGame/"> <img src="images/spooky.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a href>
+      <div class="w3-container w3-white">
+        <p><b>Horror Movie Trivia</b></p>
+        <p>text based trivia game using html, css, javascript, and jquery. press start to begin
+
+          Created an array of question objects in javascript. The game goes through each index in the array to update the questions as they are answered or timed out. javascript timers were used to keep the game moving. After all questions are finished a restart button is shown that reinitiliazes all values to start the game over.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://clickygamedamondaniels.herokuapp.com"> <img src="images/dr-who.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a href>
+      <div class="w3-container w3-white">
+        <p><b>Dr. Who Clicky Game</b></p>
+        <p>
+          React based click game. Uses a json of Doctor Who charactors to popluate a game board using a map function. Keeps track of which cards have been clicked. Click the same card twice and you lose. Click all 12 with no repeats and you win.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href ="https://peaceful-wave-48010.herokuapp.com/"><img src="images/friend.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Friend Finder</b></p>
+        <p>A friend finder app that takes in a a survey of ten questions about a user and saves the result as a json object. It then compares the results with other already saved freinds and returns the closest match.
+
+          Uses node.js to create a server and route html and api requests accordingly. Uses npm packages express and path.
+          
+          Click on take survey button to proceed.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://damonkd.github.io/Train-Scheduler/"><img src="images/train.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Train Scheduler</b></p>
+        <p>Uses firebase to create a table of train arrivals. trains can be added and time to arrival will be calculated.
+
+          Firebase was used to create a table object with the required fields. Jquery to dynamically update the table obects as new data is added. Moment.js was used for time calculations.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://damonkd.github.io/Giphy-API/"><img src="images/cat2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Giphy API</b></p>
+        <p>Gets ten animimated gif objects from giphy and displays them in still mode. Clicking an image starts the animation, clicking again stops it.
+
+          New animals can be added using the add animal button and input field.
+          
+          The challenge was to get ten animated images from a search term loaded into the html, then click on the image to start the animation. I used ajax to query the API, jquery to target and dynamically create the buttons, as well as the search option to add another button.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href ="https://desolate-beyond-26618.herokuapp.com/"><img src="images/burger.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Eat a Burger</b></p>
+        <p>Web based app to add burgers one desires to eat, and then check them off the list once they are eaten. Uses node.js, express, handlebars and mysql</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- fourth Photo Grid-->
+   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://damonkd.github.io/Word-Guess-Game/"><img src="images/6f816-king2bghidorah2b5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Kaiju Word Guess Game</b></p>
+        <p>Hangman game using javascript, html and CSS. Follow instructions on screen to play</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href ="https://damonkd.github.io/star-wars-RPG/"><img src="images/starWars.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Star Wars RPG</b></p>
+        <p>Word based rpg using jquery, css, and html</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+     
+    </div>
+  </div>
+
+  
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="images/damon.jpg" alt="Me" style="width:30%">
+    </div>
+    <div class="w3-col m6">
+    
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Damon</b></h4>
+    <p>MERN full stack developer with a background in Project Management and Customer Service. Recognized as proactive, resourceful, and persistent problem-solver. Excellent communicator with effective client relationship building skills. 
+    </p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>HTML</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+    </div>
+    <p>CSS</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>MongoDB</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>Express</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>React</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>nodejs</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>
+      <button onclick = "window.location.href = 'https://docs.google.com/document/d/1GbrUxVaRC_tXlbmJgvhYpSNwzubDI5Ujg1mFRoFiojk/edit?usp=sharing';" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Resume
+      </button>
+    </p>
+    <hr>
+    
+    <h4></h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+       
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+       
+      </div>
+      
+      <div class="w3-third">
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>damonk@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Gilbert, AZ</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>623-313-0075</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    
+  </div>
+
+  <!-- Footer -->
+  
+  
+  <div class="w3-black w3-center w3-padding-24">Damon Daniels 2020 </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
